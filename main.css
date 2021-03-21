@@ -1,0 +1,124 @@
+
+body {
+/*  margin: 0;*/
+/*  padding: 0;*/
+  min-width: 600px;
+/*  min-height: 700px;*/
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+ul.buttons {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul.buttons li, a.button {
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f7f7f7, #ededed);
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  color: #444;
+  margin: 0;
+  height: 28px;
+  line-height: 28px;
+  padding: 0px 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+#input {
+  margin-top: 5px;
+}
+#input textarea {
+  width: 100%;
+  font-family: monospace;
+}
+#input input {
+  width: 200px;
+  font-family: monospace;
+}
+#input .title {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#output .element {
+  margin-top: 5px;
+  font-size: 12px;
+}
+#output .title {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#output .expand {
+  position: relative;
+  left: 10px;
+  bottom: 0px;
+/*  padding: 2px 18px 2px 10px;*/
+  padding: 2px 10px 2px 10px;
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
+  background-repeat: no-repeat;
+/*  background-position: 88% center;*/
+  background-position: left center;
+  border-radius: 5px 5px 0 0;
+  border-top: 1px solid #e3e3e3;
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #eeeeee;
+  cursor: pointer;
+  color: #777777;
+  font-size: 11px;
+  display: none;
+  text-decoration: underline;
+}
+
+#output .note {
+  position: relative;
+  left: 20px;
+  bottom: 3px;
+  padding: 1px 8px;
+  border-radius: 3px;
+  background-color: cornsilk;
+  color: #111111;
+  font-weight: bold;
+  font-size: 11px;
+}
+#output .value {
+  padding: 5px;
+  position: relative;
+  background-color: #f5f5f5;
+  width: 100%;
+  font-family: monospace;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#output .value textarea {
+  font-family: monospace;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+#output .ruler {
+  font-family: monospace;
+  font-size: 12px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HashTest</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <script src="lib/jquery-1.7.2.min.js" type="text/javascript" ></script>
+    <script src="lib/cryptojs/components/core-min.js"></script>
+    <script src="lib/cryptojs/rollups/sha256.js"></script>
+    <script src="lib/cryptojs/rollups/hmac-md5.js"></script>
+    <script src="lib/cryptojs/rollups/hmac-sha1.js"></script>
+    <script src="lib/cryptojs/rollups/hmac-sha256.js"></script>
+    <script src="hashcash.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="screen-1" class="screens">
+      <ul id="tabs" class="buttons"><li id="hash" class="on l1">Hash</li>
+      <!-- input -->
+      <div id="input">
+        <div class="title">
+          Input:
+        </div>
+        <textarea id="input-value" style="min-width: 400px;" autofocus></textarea>
+      </div>
+      <!-- output -->
+      <div id="output">
+	  
+      </div>
+    </div> 
+<div class="container">
+            <div class="reqMethod">
+                <span>请求方式：</span>
+                <label>Get</label><input name="method" type="radio" value="GET" />
+                <label>Post</label><input name="method" type="radio" value="POST" />
+            </div>
+            <div class="">
+                <span>请求地址：</span>
+                <input name="url" type="text" />
+            </div>
+            <div class="">
+                <span>请求参数：</span>
+                <textarea name="data" class="reqData"></textarea>
+            </div>
+            <div class="">
+                <span>响应数据：</span>
+                <textarea name="responseData"></textarea>
+            </div>
+            <div class=""><button type="button" id="go" class="">GO!</button></div>
+            <div style="clear:both"></div>
+        </div>	
+  </body>
+</html>
